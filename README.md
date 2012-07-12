@@ -2,17 +2,18 @@ QLColorCode-extra
 =================
 
 Added support for the following filetypes:
-  conf
-  haml
-  install
-  inc
-  make
-  module
-  less
-  profile
-  rake
-  sass
-  scss
+
+* conf
+* haml
+* install
+* inc
+* make
+* module
+* less
+* profile
+* rake
+* sass
+* scss
 
 
 QLColorCode
@@ -37,54 +38,59 @@ that could be useful:
 
 Setting the text encoding (default is UTF-8).  Two settings are required.  The
 first sets Highlight's encoding, the second sets Webkit's:
+
     defaults write org.n8gray.QLColorCode textEncoding UTF-16
     defaults write org.n8gray.QLColorCode webkitTextEncoding UTF-16
 
 Setting the font:
+
     defaults write org.n8gray.QLColorCode font Monaco
 
 the font size:
+
     defaults write org.n8gray.QLColorCode fontSizePoints 9
 
 the color style (see http://www.andre-simon.de/dokuwiki/doku.php?id=theme_examples
 or try slateGreen to see how I roll):
+
     defaults write org.n8gray.QLColorCode hlTheme ide-xcode
 
 any extra command-line flags for Highlight (see below):
+
     defaults write org.n8gray.QLColorCode extraHLFlags '-l -W'
 
 the maximum size (in bytes) for previewed files:
+
     defaults write org.n8gray.QLColorCode maxFileSize 1000000
 
 Here are some useful 'highlight' command-line flags (from the man page):
-       -F, --reformat=<style>
-              reformat output in given style.   <style>=[ansi,  gnu,  kr,
-              java, linux]
 
-       -J, --line-length=<num>
-              line length before wrapping (see -W, -V)
+	-F, --reformat=<style>
+		reformat output in given style.   <style>=[ansi,  gnu,  kr, java, linux]
 
-       -j, --line-number-length=<num>
-              line number length incl. left padding
+	-J, --line-length=<num>
+		line length before wrapping (see -W, -V)
 
-       -l, --linenumbers
-              print line numbers in output file
+	-j, --line-number-length=<num>
+		line number length incl. left padding
 
-       -t  --replace-tabs=<num>
-              replace tabs by num spaces
+	-l, --linenumbers
+		print line numbers in output file
 
-       -V, --wrap-simple
-              wrap long lines without indenting function  parameters  and
-              statements
+	-t  --replace-tabs=<num>
+		replace tabs by num spaces
 
-       -W, --wrap
-              wrap long lines
+	-V, --wrap-simple
+		wrap long lines without indenting function  parameters  and statements
 
-       -z, --zeroes
-              fill leading space of line numbers with zeroes
+	-W, --wrap
+		wrap long lines
 
-       --kw-case=<upper|lower|capitalize>
-              control case of case insensitive keywords
+	-z, --zeroes
+		fill leading space of line numbers with zeroes
+
+	--kw-case=<upper|lower|capitalize>
+		control case of case insensitive keywords
 
 Highlight can handle lots and lots of languages, but this plugin will only be
 invoked for file types that the OS knows are type "source-code".  Since the OS
@@ -129,8 +135,8 @@ The Xcode plugin is installed at:
 /Developer/Applications/Xcode.app/Contents/Library/QuickLook/SourceCode.qlgenerator
 The simplest way to disable it is to open Terminal.app and run these commands:
 
-  f=/Developer/Applications/Xcode.app/Contents/Library/QuickLook/SourceCode.qlgenerator
-  sudo mv $f $f.disabled
+	f=/Developer/Applications/Xcode.app/Contents/Library/QuickLook/SourceCode.qlgenerator
+	sudo mv $f $f.disabled
 
 This will rename the plugin to SourceCode.qlgenerator.disabled, which will
 prevent it from being loaded by quicklookd.
@@ -142,9 +148,9 @@ The Xcode application is cryptographically signed. Disabling the
 SourceCode.qlgenerator plugin will NOT invalidate the signature. You can
 confirm this by using the codesign command after disabling the plugin:
 
-  [n8gray@golux]% codesign -vv /Developer/Applications/Xcode.app
-  /Developer/Applications/Xcode.app: valid on disk
-  /Developer/Applications/Xcode.app: satisfies its Designated Requirement
+	[n8gray@golux]% codesign -vv /Developer/Applications/Xcode.app
+	/Developer/Applications/Xcode.app: valid on disk
+	/Developer/Applications/Xcode.app: satisfies its Designated Requirement
 
 Cheers,
 -n8
