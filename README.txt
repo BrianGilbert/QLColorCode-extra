@@ -1,6 +1,12 @@
 QLColorCode-extra
 =================
 
+To install:
+	mv QLColorCode.qlgenerator ~/Library/QuickLook/
+
+If you previously had a version of QLColorCode installed you will need to run the following from terminal:
+	qlmanage -r
+
 Added support for the following filetypes:
 
 * conf
