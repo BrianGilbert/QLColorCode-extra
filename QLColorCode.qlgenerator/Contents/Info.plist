@@ -664,6 +664,7 @@
         <key>public.filename-extension</key>
         <array>
             <string>clj</string>
+            <string>clojure</string>
         </array>
     </dict>
 </dict>
