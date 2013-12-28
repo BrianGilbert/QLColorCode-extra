@@ -22,6 +22,7 @@ Added support for the following filetypes:
 * rake
 * sass
 * scss
+* Clojure (both .clj and .clojure extensions)
 
 
 QLColorCode
