@@ -1,8 +1,5 @@
 # Coffeescript language definition file
-#
-# Author: Andre Simon
-#   Mail: andre.simon1@gmx.de
-#   Date: 26.1.2002
+# Note: this language definition is rather rudimentary, but works fine for QuickLook.
 # ------------------------------------------
 # This file is a part of highlight, a free source code converter released under the GPL.
 #
@@ -11,9 +8,6 @@
 #
 # New definition files for future releases of highlight are always appreciated ;)
 #
-# ----------
-# andre.simon1@gmx.de
-# http:/www.andre-simon.de/
 
 $DESCRIPTION=CoffeeScript
 # Taken from https://github.com/isagalaev/highlight.js/blob/master/src/languages/coffeescript.js
