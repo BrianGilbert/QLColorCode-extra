@@ -23,6 +23,9 @@ Added support for the following filetypes:
 * sass
 * scss
 * Clojure (both .clj and .clojure extensions)
+* coffeescript (.coffee)
+* stylus (.stylus)
+* handlebars (.hbs)
 
 
 QLColorCode
