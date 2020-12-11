@@ -1,3 +1,5 @@
+I am deprecating this in favor of QLColorCode now that it is maintained again. I have created an issue with code to add some filetypes relevant to Drupal at: https://github.com/anthonygelibert/QLColorCode/issues/74
+
 QLColorCode-extra
 =================
 
